@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.AdminBookingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/white"
+        android:backgroundTint="@color/jade"
+        android:background="@drawable/round_bottom"
+        android:id="@+id/fraglibbook_titletxt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/interbold"
+        android:textSize="25sp"
+        android:text="Booking Management "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:gravity="center">
+            <LinearLayout
+                android:backgroundTint="@color/jade"
+                android:elevation="20dp"
+                android:padding="10dp"
+                android:background="@drawable/round_low"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:id="@+id/fragadmin_bookingconfirm"
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/appointment"
+                    android:layout_width="64dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:fontFamily="@font/interbold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:text="Booking confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:backgroundTint="@color/jade"
+                android:elevation="20dp"
+                android:padding="10dp"
+                android:background="@drawable/round_low"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:id="@+id/fragadmin_bookingstat"
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/stats"
+                    android:layout_width="64dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:fontFamily="@font/interbold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:text="Booking statistic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

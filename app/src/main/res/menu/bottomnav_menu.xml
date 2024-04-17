@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/bottomnav_search"
+      android:title="EXPLORE"
+      android:icon="@drawable/search"/>
+  <item android:id="@+id/bottomnav_cart"
+      android:title="YOUR CART"
+      android:icon="@drawable/shopping_cart_24px"/>
+  <item android:id="@+id/bottomnav_profile"
+      android:title="YOUR PROFILE"
+      android:icon="@drawable/person_24px"/>
+</menu>

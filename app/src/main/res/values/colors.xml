@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_theme_medgreen">#176B87</color>
+    <color name="main_theme_lowgreen">#64CCC5</color>
+    <color name="main_theme_highgreen">#04364A</color>
+    <color name="main_theme_lowcream">#FAF1E4</color>
+    <color name="lownavy">#D2E0FB</color>
+    <color name="grey">#6B728E</color>
+    <color name="transparent">#00000000</color>
+    <color name="jade">#64CCC5</color>
+    <color name="bgcolor">#E8EAF1</color>
+    <color name="high_pink">#FBA1B7</color>
+</resources>

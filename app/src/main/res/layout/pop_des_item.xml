@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_marginRight="25dp"
+    android:elevation="20dp"
+    android:id="@+id/pop_des_layout"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <com.makeramen.roundedimageview.RoundedImageView
+     android:id="@+id/pop_des_img"
+     app:riv_corner_radius="15dp"
+     android:scaleType="centerCrop"
+     android:src="@drawable/greece"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/pop_des_txt"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interblackitalic"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:text="Japan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

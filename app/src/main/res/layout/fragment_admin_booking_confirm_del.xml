@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".Fragment.AdminBookingConfirmDelFragment">
+
+
+        <LinearLayout
+            android:id="@+id/adminbookcfdel_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/jade"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/fragguestcoundel_backbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/transparent"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/fragguestcoundel_countrytitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:fontFamily="@font/interbold"
+                android:gravity="center"
+                android:text="Detail information"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/adminbookcfdel_img"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotel_anantara_muine_vietnam"
+            app:layout_constraintTop_toBottomOf="@id/adminbookcfdel_topbar"
+            app:riv_corner_radius="10dp" />
+
+        <ScrollView
+            android:id="@+id/adminbookcfdel_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adminbookcfdel_img">
+
+            <LinearLayout
+                android:id="@+id/adminbookcfdel_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="70dp">
+
+                <TextView
+                    android:id="@+id/adminbookcfdel_hotelname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/interbold"
+                    android:text="PALACE HOTEL"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/adminbookcfdel_roomname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/interbold"
+                    android:text="Family room"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_checkinout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="2/11/2023 - 3/11/2023"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/interregular"
+                        android:gravity="right"
+                        android:text="1 nights"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/adminbookcfdel_roomdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/interregular"
+                    android:text="1 room , 2 adults , 2 kids"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interbold"
+                        android:text="Name "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="Nguyễn Văn A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interbold"
+                        android:text="Phone number "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_userphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="0123456789"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interbold"
+                        android:text="Email "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_usermail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="a@gmail.com"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interbold"
+                        android:text="Card number "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="434324324234"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interbold"
+                        android:text="Booking date  "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/adminbookcfdel_bookingdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/interregular"
+                        android:text="2/11/2023"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/adminbookcfdel_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/interbold"
+                    android:gravity="center"
+                    android:text="Prices : 200$ "
+                    android:textSize="22sp" />
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/adminbookcfdel_btn"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/adminbookcfdel_confirmbtn"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/jade"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/interbold"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_low"
+                        android:text="PAID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/adminbookcfdel_cancelbtn"
+                        android:fontFamily="@font/interbold"
+                        android:textSize="17sp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/edt_transparent"
+                        android:text="Cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

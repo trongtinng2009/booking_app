@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bookingitem_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mtfuji_japan"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_weight="6.5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/bookingitem_hotelname"
+                    android:fontFamily="@font/interbold"
+                    android:textSize="18sp"
+                    android:text="PALACE HOTEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bookingitem_username"
+                    android:fontFamily="@font/interbold"
+                    android:textSize="15sp"
+                    android:text="Khách hàng : Nguyễn Văn A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bookingitem_bookdate"
+                    android:fontFamily="@font/interbold"
+                    android:textSize="15sp"
+                    android:text="Ngày đặt : 20/11/2023"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bookingitem_total"
+                    android:fontFamily="@font/interbold"
+                    android:textSize="15sp"
+                    android:text="Tổng tiền : 200$"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bookingitem_accbtn"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/interbold"
+                    android:backgroundTint="@color/jade"
+                    android:background="@drawable/round_topleft"
+                    android:text="Verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

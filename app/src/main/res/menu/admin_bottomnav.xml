@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/adminnav_booking"
+        android:title="BOOKING"
+        android:icon="@drawable/request_quote"/>
+    <item android:id="@+id/adminnav_cart"
+        android:title="INFORMATION"
+        android:icon="@drawable/king_bed"/>
+    <item android:id="@+id/adminnav_profile"
+        android:title="YOUR PROFILE"
+        android:icon="@drawable/person_24px"/>
+</menu>
